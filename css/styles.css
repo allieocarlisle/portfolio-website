@@ -8,7 +8,8 @@ Black: #000
 
 :root {
 	--primary-color:  #b12f50;
-	--secondary-color: #d6b0b7;
+	--secondary-color: #e9b308;
+	--secondary-color-tint: #faefcd;
 	--light-gray:  #D3D3D3;
 	--dark-gray:  #696969;
 	--white: #FFF;
@@ -38,16 +39,13 @@ body {
 	font-family: 'Lato' , sans-serif;
 	font-size: 16px;
 	min-height: 100vh;
-	margin: 0px;
-	background-color: #f1f1f1;
 }
 
 main {
 	width: 100%;
-	padding: 50px;
 	text-align: center;
+	padding: 50px;
 	line-height: 1.8;
-	background-color: #f1f1f1;
 	margin-bottom: 50px;
 }
 
@@ -109,7 +107,7 @@ button:focus,
 	display: flex;
 	width: 100%;
 	padding: 8px;
-	background-color: var(--dark-gray);
+	background-color: var(--secondary-color-tint);
 }
 
 .page-header_item:first-child {
@@ -142,17 +140,17 @@ button:focus,
 }
 /* end header */
 
-.profile {
-	min-width: 360px;
-	max-width: 1200px;
-}
-
 .profile_portrait {
 	float: left;
-	width: 225px;
-	margin-right: 40px;
 	border-radius: 50%;
 	image-rendering: auto;
+	width: 250px;
+	margin-right: 40px;
+}
+
+.profile {
+	max-width: 700px;
+	margin: 0 auto;
 }
 
 .navigation-list_item--active {
@@ -185,8 +183,8 @@ button:focus,
 		margin: 0;
 	}
 	.project-list_item {
-		background-color: var(--dark-gray);
-		color: var(--white);
+		background-color: var(--secondary-color-tint);
+		color: var(--black);
 		width: auto;
 		min-height: auto;
 		margin: 0;
@@ -270,7 +268,8 @@ button:focus,
 
 #about-picture {
 	margin-top: 40px;
-	width: 100%, height: auto;
+	width: 100%;
+	height: auto;
 }
 
 /* start table styling */
