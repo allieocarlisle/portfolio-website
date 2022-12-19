@@ -8,12 +8,15 @@ Black: #000
 
 :root {
 	--primary-color:  #b12f50;
+	--primary-color-tint: #f7eaee;
 	--secondary-color: #e9b308;
-	--secondary-color-tint: #faefcd;
+	--secondary-color-tint: #fdfaf0;
 	--light-gray:  #D3D3D3;
 	--dark-gray:  #696969;
 	--white: #FFF;
 	--black:  #000;
+	--blue: #26428b;
+	--purple: #663366;
 	--primary-font-weight:  600;
 }
 
@@ -23,7 +26,7 @@ Black: #000
 
 a {
 	text-decoration: none;
-	color: var(--black);
+	color: var(--blue);
 }
 
 a:hover, a:focus {
@@ -31,8 +34,8 @@ a:hover, a:focus {
 	text-decoration: underline;
 }
 
-a:active {
-	color: green;
+a:visited {
+	color: var(--purple)
 }
 
 body {
@@ -42,11 +45,26 @@ body {
 }
 
 main {
+	margin-top: 9vh;
 	width: 100%;
 	text-align: center;
-	padding: 50px;
 	line-height: 1.8;
-	margin-bottom: 50px;
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+
+/* how can I grow my .profile container? */
+.profile {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background-color: var(--secondary-color-tint);
+	background-size: cover;
+}
+
+#index-about {
+	background-color: var(--secondary-color-tint);
+	padding: 200px;
 }
 
 h1 {
@@ -55,9 +73,13 @@ h1 {
 	font-family: arial;
 	font-style: italic;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	letter-spacing: 5px;
 	line-height: 1.3em;
 	align-items: center;
+}
+
+#welcome {
+	font-size: 100px;
 }
 
 h2 {
@@ -70,6 +92,15 @@ h3 {
 	font-weight: var(--primary-font-weight);
 }
 
+p#meet {
+	letter-spacing: 5px;
+}
+
+p {
+	letter-spacing: 2px;
+	padding: 10px;
+}
+
 .button, button {
   /* overwrites browser defaults and resets the border */
   border: none;
@@ -80,7 +111,7 @@ h3 {
   background-color: var(--primary-color);
   color: var(--white);
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
+  /*adds spacing to the button */
   padding: 20px;
   width: 200px;
   height: 10px;
@@ -102,14 +133,22 @@ button:focus,
 	opacity: 0.8;
 }
 
+button a {
+	text-decoration: none;
+}
+
 /* start header */
 .page-header {
 	display: flex;
 	width: 100%;
 	padding: 8px;
-	background-color: var(--secondary-color-tint);
+	justify-content: space-between;
+	position: fixed;
+	background-color: var(--white);
+	top: 0;
 }
 
+/* keeping navbar display for reference 
 .page-header_item:first-child {
 	width: 5%;
 }
@@ -118,6 +157,12 @@ button:focus,
 	flex-grow: 1;
 	text-align: right;
 	margin-right: 8px;
+}
+/*
+
+/* remove text decoration on navbar links, so they do not act as visited links */
+.page-header a {
+	color: var(--black);
 }
 
 #header_logo {
@@ -148,21 +193,20 @@ button:focus,
 	margin-right: 40px;
 }
 
-.profile {
-	max-width: 700px;
-	margin: 0 auto;
-}
-
 .navigation-list_item--active {
 	text-decoration: none;
+}
+
+#profile-box {
+	margin: 16px;
 }
 
 .page-footer {
 	text-align: center;
 	padding: 20px;
-	position: fixed;
 	bottom: 0;
 	width: 100%;
+	border-top: solid var(--dark-gray) 2px;
 }
 
 
