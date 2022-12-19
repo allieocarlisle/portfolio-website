@@ -1,10 +1,3 @@
-/* Colors used
-Primary Color (Dark Pink Red): #b12f50
-Secondary Color (Light Pink): #d48494
-Light Gray:  #D3D3D3
-White: #FFF
-Black: #000
-*/
 
 :root {
 	--primary-color:  #b12f50;
@@ -51,20 +44,24 @@ main {
 	line-height: 1.8;
 	padding-right: 100px;
 	padding-left: 100px;
+	border: 10px solid green;
 }
 
 
 /* how can I grow my .profile container? */
 .profile {
-	padding-top: 150px;
+	padding-right: 150px;
 	padding-bottom: 150px;
+	padding-left: 150px;
 	background-color: var(--secondary-color-tint);
 	background-size: cover;
+	border: 10px solid pink;
 }
 
 #index-about {
 	background-color: var(--secondary-color-tint);
 	padding: 200px;
+	border: 10px solid darkmagenta;
 }
 
 h1 {
@@ -76,10 +73,6 @@ h1 {
 	letter-spacing: 5px;
 	line-height: 1.3em;
 	align-items: center;
-}
-
-#welcome {
-	font-size: 100px;
 }
 
 h2 {
@@ -98,7 +91,8 @@ p#meet {
 
 p {
 	letter-spacing: 2px;
-	padding: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
 .button, button {
@@ -146,6 +140,7 @@ button a {
 	position: fixed;
 	background-color: var(--white);
 	top: 0;
+	border: solid 10px orange;
 }
 
 /* keeping navbar display for reference 
@@ -186,11 +181,11 @@ button a {
 /* end header */
 
 .profile_portrait {
-	float: left;
+	float: right;
 	border-radius: 50%;
 	image-rendering: auto;
 	width: 250px;
-	margin-right: 40px;
+	border: 10px solid blue;
 }
 
 .navigation-list_item--active {
@@ -198,7 +193,10 @@ button a {
 }
 
 #profile-box {
-	margin: 16px;
+	max-width: 800px;
+	margin: 30px;
+	border: 10px solid black;
+
 }
 
 .page-footer {
@@ -207,6 +205,7 @@ button a {
 	bottom: 0;
 	width: 100%;
 	border-top: solid var(--dark-gray) 2px;
+	border: 10px solid yellow;
 }
 
 
