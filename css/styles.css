@@ -20,6 +20,7 @@
 a {
 	text-decoration: none;
 	color: var(--blue);
+	letter-spacing: 3px;
 }
 
 a:hover, a:focus {
@@ -42,25 +43,47 @@ main {
 	margin-top: 9vh;
 	text-align: center;
 	line-height: 1.8;
-	padding-right: 100px;
-	padding-left: 100px;
+	padding-right: 200px;
+	padding-left: 200px;
 	border: 10px solid green;
+	background-color: var(--secondary-color-tint);
 }
 
-
-/* how can I grow my .profile container? */
-.profile {
-	padding-right: 150px;
-	padding-left: 150px;
+#index {
 	background-color: var(--secondary-color-tint);
-	background-size: cover;
+	padding-right: 200px;
+	padding-left: 200px;
 	border: 10px solid pink;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#profile-box {
+	max-width: 800px;
+	margin: 5px;
+	border: 10px solid black;
 }
 
 #index-about {
 	background-color: var(--secondary-color-tint);
-	padding: 200px;
+	padding-right: 200px;
+	padding-left: 200px;
 	border: 10px solid darkmagenta;
+}
+
+#index-work {
+	background-color: var(--secondary-color-tint);
+	padding-right: 200px;
+	padding-left: 200px;
+	border: 10px solid greenyellow;
+}
+
+#index-contact {
+	background-color: var(--secondary-color-tint);
+	padding-right: 200px;
+	padding-left: 200px;
+	border: 10px solid var(--blue);
 }
 
 h1 {
@@ -69,14 +92,17 @@ h1 {
 	font-family: arial;
 	font-style: italic;
 	text-transform: uppercase;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	line-height: 1.3em;
-	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 h2 {
 	font-size: 24px;
 	font-weight: var(--primary-font-weight);
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 h3 {
@@ -90,8 +116,8 @@ p#meet {
 
 p {
 	letter-spacing: 2px;
-	padding-right: 50px;
-	padding-left: 50px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 .button, button {
@@ -192,16 +218,11 @@ button a {
 	text-decoration: none;
 }
 
-#profile-box {
-	max-width: 800px;
-	margin: 30px;
-	border: 10px solid black;
-
-}
-
 .page-footer {
-	text-align: center;
-	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
 	bottom: 0;
 	width: 100%;
 	border-top: solid var(--dark-gray) 2px;
@@ -232,6 +253,7 @@ button a {
 		min-height: auto;
 		margin: 0;
 		padding: 20px;
+		border: solid 10px red;
 	}
 	.project-list_item:last-child {
 		grid-column: 3 / 3;
