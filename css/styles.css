@@ -185,6 +185,7 @@ button a {
 	image-rendering: auto;
 	width: 250px;
 	border: 10px solid blue;
+	margin: 50px;
 }
 
 .navigation-list_item--active {
