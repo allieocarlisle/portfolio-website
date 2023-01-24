@@ -50,23 +50,25 @@ main {
 	background-color: var(--secondary-color-tint);
 }
 
+/* @media (max-width: 800px) {
+	main {
+	  flex-direction: column;
+	}
+  } */
+
 #index {
 	background-color: var(--secondary-color-tint);
 	padding-right: 200px;
 	padding-left: 200px;
 	/* remove border when published */
 	border: 10px solid pink;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
-#profile-box {
+/* #profile-box {
 	max-width: 800px;
 	margin: 5px;
-	/* remove border when published */
 	border: 10px solid black;
-}
+} */
 
 #index-about {
 	background-color: var(--secondary-color-tint);
@@ -93,10 +95,9 @@ main {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 32px;
 	font-weight: var(--primary-font-weight);
 	font-family: arial;
-	font-style: italic;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	line-height: 1.3em;
@@ -213,13 +214,11 @@ button a {
 /* end header */
 
 .profile_portrait {
-	float: right;
 	border-radius: 50%;
 	image-rendering: auto;
 	width: 250px;
-	/* remove border when published */
-	border: 10px solid blue;
-	margin: 50px;
+	border: 5px solid whitesmoke;
+	margin: 10px;
 }
 
 .navigation-list_item--active {
